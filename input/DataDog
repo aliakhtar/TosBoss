@@ -1,0 +1,131 @@
+https://app.datadoghq.com/policy/terms
+
+Datadog, Inc. - Terms of Use
+
+This Terms of Use is effective as of March 2011.
+
+INTRODUCTION/ACCEPTANCE
+
+Welcome to the Datadog, Inc. ("Datadog", "We", "Our") data management and analysis service. This web site (the “Site”), all content offered as part thereof, and any other services owned, controlled, or offered by Datadog are collectively referred to herein as, the "Services". Subscribers, account holders, customers, users, and others who download, access, use, purchase and/or subscribe to the Services (collectively or individually "You" or "Users") must do so under the following terms and conditions of use (“Terms of Use”).
+
+BEFORE USING ANY SERVICES, PLEASE READ CAREFULLY THE FOLLOWING TERMS OF USE. BY ACCESSING, BROWSING AND/OR USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY ALL THE TERMS, CONDITIONS, CONSENTS AND DISCLOSURES SET FORTH IN THE TERMS OF USE, INCLUDING ANY FUTURE MODIFICATIONS HERETO, ALL CONSENTS AND DISCLOSURES SET FORTH IN THE DATADOG REGISTRATION PROCESS AND ALL GUIDELINES SET FORTH ON THE SITE. IF YOU DO NOT AGREE TO THE TERMS OF USE, THEN PLEASE CEASE USING THE SERVICES IMMEDIATELY. ALL THE SERVICES ARE AVAILABLE ONLY FOR INDIVIDUALS AGED 13 YEARS OR OLDER. IF YOU ARE 13 OR OLDER BUT UNDER THE AGE OF 18, OR THE LEGAL AGE OF MAJORITY WHERE YOU RESIDE IF THAT JURISDICTION HAS AN OLDER AGE OF MAJORITY, THEN YOU AGREE TO REVIEW THESE TERMS AND CONDITIONS WITH YOUR PARENT OR GUARDIAN TO MAKE SURE THAT BOTH YOU AND YOUR PARENT OR GUARDIAN UNDERSTAND AND AGREE TO THIS TERMS OF USE. YOU AGREE TO HAVE YOUR PARENT OR GUARDIAN REVIEW AND ACCEPT THIS TERMS OF USE ON YOUR BEHALF. IF YOU ARE A PARENT OR GUARDIAN AGREEING TO THIS TERMS OF USE FOR THE BENEFIT OF A CHILD OVER 13, THEN YOU AGREE TO AND ACCEPT FULL RESPONSIBILITY FOR THAT CHILD'S USE OF THE SERVICES, INCLUDING ALL FINANCIAL CHARGES AND LEGAL LIABILITY THAT HE OR SHE MAY INCUR.
+
+MODIFICATION
+
+We reserve the right, at our sole discretion, to modify, discontinue or terminate the Services or to modify the Terms of Use, at any time and without prior notice. If we modify the Terms of Use, we will post the modification on the Site. We will also indicate the effective date and last update date at the top of this page. By continuing to access or use the Services after we have posted a modification on the Site or have provided you with notice of a modification, you are indicating that you agree to be bound by the modified Terms of Use. If the modified Terms of Use are not acceptable to you, your only recourse is to cease using the Services.
+
+PRIVACY
+
+We consider your privacy one of our highest priorities. Please refer to our Privacy Policy for information and notices concerning our collection and use of your personal information.
+
+LIMITATIONS OF SERVICES
+
+You acknowledge that Datadog may establish limits concerning use of the Services, including the maximum number of days that content will be retained by the Services, the maximum number and size of log files or other content that may be transmitted or stored by the Services, the frequency with which you may access the Services and the locations where the Service is available. You agree that Datadog has no responsibility or liability for the deletion or failure to store any content maintained or transmitted by the Services. You acknowledge that Datadog reserves the right at any time to modify or discontinue the Services (or any part thereof) with or without notice, and that Datadog shall not be liable to you or to any third party for any modification, suspension or discontinuance of the Services.
+
+ACCESS TO SERVICES
+
+You are responsible for obtaining access to the World Wide Web through devices that access web-based content. You must provide all equipment necessary to make such connection to the World Wide Web, including a computer and modem or other access device.
+
+DATADOG PROPRIETARY RIGHTS
+
+The Services are protected by copyright, trademark, and other laws of the United States and foreign countries. Except as expressly provided in the Terms of Use, Datadog and its licensors exclusively own or control all right, title and interest in and to the Services, including all associated intellectual property rights. You will not remove, alter or obscure any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Services.
+
+All trademarks, service marks, logos, trade names and any other proprietary designations of Datadog used herein are trademarks or registered trademarks of Datadog. Any other trademarks, service marks, logos, trade names and any other proprietary designations are the trademarks or registered trademarks of their respective parties.
+
+Datadog authorizes you to download, view and print any content available as part of the Services solely for your personal and non-commercial purposes (except as provided otherwise in Section 8 with respect to your own User Content), and subject to the restrictions set forth in the Terms of Use. You will not use, copy, adapt, modify, prepare derivative works based upon, distribute, license, sell, transfer, publicly display, publicly perform, transmit, stream, broadcast or otherwise exploit the Services, except as expressly permitted in the Terms of Use. No licenses or rights are granted to you by implication or otherwise under any intellectual property rights owned or controlled by Datadog or its licensors, except for the licenses and rights expressly granted in the Terms of Use.
+
+API TERMS
+
+Users may access the Services via Datadog’s Application Program Interface (“API”). Any use of the API is bound by the terms of this Terms of Use and the following specific terms:
+
+You expressly understand and agree that Datadog shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Datadog has been advised of the possibility of such damages), resulting from your use of the API.
+Abuse or excessively frequent requests to Datadog via the API may result in the temporary or permanent suspension of your account’s access to the API. Datadog, in its sole discretion, will determine abuse or excessive usage of the API. Datadog will make a reasonable attempt via email to warn the account owner prior to suspension.
+Datadog reserves the right at any time to modify or discontinue, temporarily or permanently, your access to the API (or any part thereof) with or without notice.
+USER CONTENT RIGHTS
+
+You retain ownership rights to log audit and any other data contributed by You in connection with the Services (“User Content”). By making available any User Content through the Services, You hereby grant to Datadog a worldwide, irrevocable, perpetual, non-exclusive, transferable, royalty-free license, with the right to use, copy, adapt, modify, and otherwise exploit User Content for the purposes of improving the Services for all Datadog users. Datadog does not claim any ownership rights in any such User Content and nothing in the Terms of Use will be deemed to restrict any rights that You may have to use and exploit any such User Content. You acknowledge and agree that You are solely responsible for all User Content that you make available through the Services. Datadog does not have any obligation to review or scan any User Content for any purpose, including without limitation for measuring quality, filtering content, or detecting the presence of malware. Datadog makes no representations regarding the compliance of any User Content with any applicable laws or regulations.
+
+Notwithstanding the foregoing, You may also disclose to us certain User Content, including without limitation feedback and comments, via Datadog’s community communication tools, such as wikis and bulletin boards (“User Proposals”). By submitting User Proposals to Datadog, You hereby grant to Datadog a royalty-free, irrevocable, perpetual, non-exclusive, unrestricted, worldwide license to use, copy, adapt, modify, sublicense, transmit, distribute, display, sell, transfer, incorporate into Datadog’s products or services, create derivative works from, or otherwise exploit any such User Proposals.
+
+Datadog will not disclose your identity to third parties except as necessary to provide Services as expressly provided for in Datadog’s Privacy Policy.
+
+USER RESTRICTIONS
+
+You agree not to do any of the following in connection with using the Services:
+
+Post, upload, publish, submit or transmit any text, graphics, images, software, music, audio, video, information or other material that: (i) infringes, misappropriates or violates a third party's patent, copyright, trademark, trade secret, moral rights or other intellectual property rights, or rights of publicity or privacy; (ii) violates, or encourages any conduct that would violate, any applicable law or regulation or would give rise to civil liability; (iii) is fraudulent, false, misleading or deceptive; (iv) is defamatory, obscene, pornographic, vulgar or offensive; (v) promotes discrimination, bigotry, racism, hatred, harassment or harm against any individual or group; (vi) is violent or threatening or promotes violence or actions that are threatening to any other person; or (vii) promotes illegal or harmful activities or substances (including but not limited to activities that promote or provide instructional information regarding the manufacture or purchase of illegal weapons or illegal substances).
+Use, display, mirror, frame or utilize framing techniques to enclose the Site, or any individual element or materials within the Site, Datadog's name, any Datadog trademark, logo or other proprietary information, the content of any text or the layout and design of any page or form contained on a page, without Datadog' express written consent;
+Access, tamper with, or use non-public areas of the Site, Datadog's computer systems, or the technical delivery systems of Datadog's providers; Attempt to probe, scan, or test the vulnerability of any Datadog system or network or breach any security or authentication measures;
+Avoid, bypass, remove, deactivate, impair, descramble or otherwise circumvent any technological measure implemented by Datadog or any of Datadog' providers or any other third party (including another user) to protect the Services;
+Attempt to access or search the Services through the use of any engine, software, tool, agent, device or mechanism (including spiders, robots, crawlers, data mining tools or the like) other than tools that access or search the Services through the API, software and/or search agents provided by Datadog or other generally available third party web browsers (such as Microsoft Internet Explorer, Mozilla Firefox, Safari, Google Chrome or Opera);
+Send any unsolicited or unauthorized advertising, promotional materials, email, junk mail, spam, chain letters or other form of solicitation;
+Use any meta tags or other hidden text or metadata utilizing a Datadog trademark, logo URL or product name without Datadog’s express written consent;
+Use the Services for any commercial purpose or the benefit of any third party or in any manner not permitted by the Terms of Use;
+Forge any TCP/IP packet header or any part of the header information in any email or newsgroup posting, or in any way use the Services to send altered, deceptive or false source-identifying information;
+Interfere with, or attempt to interfere with, the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, or mail-bombing the Site;
+Collect or store any personally identifiable information from the Services from other users of the Services without their express prior permission;
+Impersonate or misrepresent your affiliation with any person or entity;
+Violate any applicable law or regulation;
+Contact anyone who has asked not to be contacted, or make unsolicited contact with anyone for any commercial purpose;
+"Stalk" or otherwise harass anyone;
+Collect personal data about other users for commercial or unlawful purposes;
+Post non-local or otherwise irrelevant content, repeatedly post the same or similar content;
+Datadog will have the right to investigate and prosecute violations of any of the above, including intellectual property rights infringement and Site security issues, to the fullest extent of the law. Datadog may involve and cooperate with law enforcement authorities in prosecuting users who violate the Terms of Use. You acknowledge that Datadog has no obligation to monitor your access to or use of the Services or to review or edit any User Content, but has the right to do so for the purpose of operating the Services, to ensure your compliance with the Terms of Use, or to comply with applicable law or the order or requirement of a court, administrative agency or other governmental body. Datadog reserves the right, at any time and without prior notice, to remove or disable access to any content, including any User Content, that Datadog, in its sole discretion, considers to be in violation of the Terms of Use or otherwise harmful to the Services.
+
+INTERACTIONS WITH OTHER USERS
+
+You are solely responsible for your interactions with other users. You understand that Datadog does not in any way screen its users, nor does Datadog inquire into their backgrounds. Datadog makes no representations or warranties as to the conduct of users. In no event shall Datadog be liable for any damages whatsoever, whether direct, indirect, general, special, compensatory, consequential, and/or incidental, arising out of or relating to the conduct of you or anyone else in connection with the use of the Services, including without limitation, bodily injury, emotional distress, and/or any other damages resulting from communications or meetings with other registered users of the Services or persons you meet through the Services. You agree to take reasonable precautions in all interactions with other users of the Services, particularly if you decide to meet offline or in person. You should not provide your financial information (for example, your credit card or bank account information) to other users.
+
+THIRD PARTY SITES / LINKS
+
+The Site and Content available through the Services may contain features and functionalities that may link you or provide you with access to third party content which is completely independent of Datadog, including web sites, directories, servers, networks, systems, information and databases, applications, software, programs, products or services, and the Internet as a whole.
+
+Your interactions with organizations and/or individuals found on or through the Services, including payment and delivery of goods or services, and any other terms, conditions, warranties or representations associated with such dealings, are solely between you and such organizations and/or individuals. You should make whatever investigation you feel necessary or appropriate before proceeding with any online or offline transaction with any of these third parties.
+
+You agree that Datadog shall not be responsible or liable for any loss or damage of any sort incurred as the result of any such dealings. If there is a dispute between participants on the Services, or between users and any third party, you understand and agree that Datadog is under no obligation to become involved. In the event that you have a dispute with one or more other users, you hereby release Datadog, its officers, employees, agents and successors in rights from claims, demands and damages (actual and consequential) of every kind or nature, known or unknown, suspected and unsuspected, disclosed and undisclosed, arising out of or in any way related to such disputes and / or our service. If you are a California resident, you waive California Civil Code Section 1542, which says: "A general release does not extend to claims which the creditor does not know or suspect to exist in his favor at the time of executing the release, which, if known by him must have materially affected his settlement with the debtor."
+
+TERMINATION
+
+You agree that Datadog, in its sole discretion, has the right (but not the obligation) to delete or deactivate your account, block your email or IP address, or otherwise terminate your access to or use of the Services (or any part thereof), immediately and without notice, and remove and discard any content within the Services, for any reason, including, without limitation, if Datadog believes that You have acted inconsistently with the letter or spirit of the Terms of Use. Further, You agree that Datadog shall not be liable to you or any third-party for any termination of your access to the Services. Further, you agree not to attempt to use the Services after said termination.
+
+SURVIVAL
+
+Any and all provisions related to or regarding limitation of liability, disclaimers, and indemnification hereby survive any termination of the Terms of Use or any termination of your use of or subscription to the Services.
+
+WARRANTY DISCLAIMER
+
+YOU AGREE THAT USE OF THE SERVICES IS ENTIRELY AT YOUR OWN RISK. THE SERVICES ARE PROVIDED ON AN "AS IS" OR "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND. ALL EXPRESS AND IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS ARE EXPRESSLY DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. TO THE FULLEST EXTENT PERMITTED BY LAW, DATADOG DISCLAIMS ANY WARRANTIES FOR THE SECURITY, RELIABILITY, TIMELINESS, ACCURACY, AND PERFORMANCE OF THE DATADOG SITE AND THE SERVICE. TO THE FULLEST EXTENT PERMITTED BY LAW, DATADOG DISCLAIMS ANY WARRANTIES FOR OTHER SERVICES OR GOODS RECEIVED THROUGH OR ADVERTISED ON THE DATADOG SITE OR THE SITES OR SERVICE, OR ACCESSED THROUGH ANY LINKS ON THE DATADOG SITE. TO THE FULLEST EXTENT PERMITTED BY LAW, DATADOG DISCLAIMS ANY WARRANTIES FOR VIRUSES OR OTHER HARMFUL COMPONENTS IN CONNECTION WITH THE SERVICES. Some jurisdictions do not allow the disclaimer of implied warranties. In such jurisdictions, some of the foregoing disclaimers may not apply to you insofar as they relate to implied warranties.
+
+INDEMNIFICATION
+
+You agree to indemnify and hold Datadog, its officers, subsidiaries, affiliates, successors, assigns, directors, officers, agents, service providers, suppliers and employees, harmless from any claim or demand, including reasonable attorney fees and court costs, made by any third party due to or arising out of User Content you submit, post or make available through the Services, your use of the Services, your violation of the Terms of Use, your breach of any of the representations and warranties herein, or your violation of any rights of another.
+
+LIMITATION OF LIABILITY
+
+UNDER NO CIRCUMSTANCES SHALL DATADOG BE LIABLE FOR DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES (EVEN IF DATADOG HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), RESULTING FROM ANY ASPECT OF YOUR USE OF THE SERVICES, WHETHER THE DAMAGES ARISE FROM USE OR MISUSE OF THE SERVICES, FROM INABILITY TO USE THE SERVICES, OR THE INTERRUPTION, SUSPENSION, MODIFICATION, ALTERATION, OR TERMINATION OF THE SERVICES. SUCH LIMITATION SHALL ALSO APPLY WITH RESPECT TO DAMAGES INCURRED BY REASON OF OTHER SERVICES OR PRODUCTS RECEIVED THROUGH OR ADVERTISED IN CONNECTION WITH THE SERVICES OR ANY LINKS ON THE DATADOG SITE, AS WELL AS BY REASON OF ANY INFORMATION OR ADVICE RECEIVED THROUGH OR ADVERTISED IN CONNECTION WITH THE SERVICES OR ANY LINKS ON THE DATADOG SITE. THESE LIMITATIONS SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW. In some jurisdictions, limitations of liability are not permitted. In such jurisdictions, some of the foregoing limitation may not apply to you.
+
+GOVERNING LAW
+
+This Terms of Use, your rights and obligations, and all actions contemplated by the Terms of Use shall be governed by the laws of the New York, without regard to its conflict of law provisions. You agree to submit to the personal and exclusive jurisdiction of the courts located within the county of New York.
+
+Additionally, except where prohibited by law, as a condition of using the Services, you agree that any and all disputes and causes of action arising out of or connected to our Services shall be resolved individually, without resort to any form of class action. You also agree that regardless of any statute or law to the contrary, any claim or cause of action arising from or related to the use of the Services must be filed within one (1) year after such claim or cause of action arose or be forever barred. The failure of either party to exercise in any respect any right provided for herein shall not be deemed a waiver of any further rights hereunder.
+
+INTEGRATION AND SEVERABILITY
+
+The Terms of Use are the entire agreement between you and Datadog with respect to the Services, and supersede all prior or contemporaneous communications and proposals (whether oral, written or electronic) between you and Datadog with respect to the Services. If any provision of the Terms of Use is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the Terms of Use will otherwise remain in full force and effect and enforceable. The failure of either party to exercise in any respect any right provided for herein shall not be deemed a waiver of any further rights hereunder.
+
+ASSIGNMENT OF TERMS
+
+You may not assign or transfer the Terms of Use, by operation of law or otherwise, without Datadog's prior express written consent. Any attempt by you to assign or transfer the Terms of Use, without such consent, will be null and of no effect. Datadog may assign or transfer the Terms of Use, in its sole discretion, without restriction. Subject to the foregoing, the Terms of Use will bind and inure to the benefit of the parties, their successors and permitted assigns.
+
+NOTICES
+
+You may not assign or transfer the Terms of Use, by operation of law or otherwise, without Datadog's prior express written consent. Any attempt by you to assign or transfer the Terms of Use, without such consent, will be null and of no effect. Datadog may assign or transfer the Terms of Use, in its sole discretion, without restriction. Subject to the foregoing, the Terms of Use will bind and inure to the benefit of the parties, their successors and permitted assigns.
+
+HEADINGS FOR CONVENIENCE ONLY
+
+Headings are for convenience only and have no legal or contractual effect.
+
+CONTACT
+
+If you have any questions about the Terms of Use, please contact us at support [at] datadoghq.com
