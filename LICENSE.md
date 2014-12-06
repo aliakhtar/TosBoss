@@ -1,0 +1,1 @@
+Copyright Ali Akhtar, all rights reserved.
