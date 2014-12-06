@@ -41,6 +41,7 @@ THEY CAN:
   - Update the functionality and user interface from time to time
   - May apply Upgrades to the Platform
      - Upgrades may result in changes in appearance and/or functionality
+  -  own all rights to all intellectual property in the Software.
 
 THEY CAN'T:
  - Under no circumstances will 3scale withhold the Customer Data from Customer or prevent Customer from obtaining access to the Customer Data.
@@ -50,13 +51,6 @@ MISC:
 - API/Web Services might have their own Terms of Service. These are not the responsibility of 3scale.
 
 - This Agreement supersedes any prior written or oral agreements between the parties.
-
-2.4.3 Customer is expressly prohibited from sublicensing use of the Software to any third parties. Customer agrees that 3scale shall own all rights, title and interest in and to all intellectual property rights in the Software.
-
-2.4.4 Except as provided in this Agreement, the license granted to Customer does not convey any rights in the Software, expressed or implied, or ownership in the Software or any intellectual property rights thereto. Any rights not expressly granted herein are reserved by 3scale.
-
-2.5. Customer Support
-
 
 2.5.1 Customer will be responsible for receiving and responding to all calls for support from his End Users for the Software and for performing initial problem analysis, diagnosis, and replication of the problem at Customer’s location. Problems will be deemed replicated if they occur persistently, if it seems reasonably likely they originate in the Software, and if Customer reasonably cooperates with 3scale by providing logs and other information about the problem, its occurrences, and provides assistance to 3scale to help isolate the problem.
 
