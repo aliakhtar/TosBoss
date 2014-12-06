@@ -20,6 +20,15 @@ YOU CAN'T:
     - Any oral or written public comments made by us
  - Copy
  - Create a derivative work
+ - Reverse engineer
+ - Reverse assemble
+ - Disassemble
+ - Decompile
+ - Attempt to discover any source code
+ - Modify the Software
+ - Use unauthorized modified versions
+ - Sublicensing to any third parties
+
 
 YOU MUST:
  - review these Terms from time to time.
@@ -41,8 +50,6 @@ MISC:
 - API/Web Services might have their own Terms of Service. These are not the responsibility of 3scale.
 
 - This Agreement supersedes any prior written or oral agreements between the parties.
-
-,  of, reverse engineer, reverse assemble, disassemble, or decompile the Software or any part thereof otherwise attempt to discover any source code, modify the Software in any manner or form, or use unauthorized modified versions of the Software, including (without limitation) for the purpose of building a similar or competitive product or service or for the purpose of obtaining unauthorized access to the Software.
 
 2.4.3 Customer is expressly prohibited from sublicensing use of the Software to any third parties. Customer agrees that 3scale shall own all rights, title and interest in and to all intellectual property rights in the Software.
 
