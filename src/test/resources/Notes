@@ -1,0 +1,23 @@
+- Change things like 'third' to 3rd
+
+- Remove redundant 'the's in CAN/CANT/MUST lists, e.g 'permit X to use the software' => permit X to use software
+
+- Things like "The terms of this agreement" => "These terms"
+
+- Remove redundant can/shall, e.g "these terms shall also apply" => "these terms apply"
+
+- Remove things like 'that have been', e.g 'things that have been' -> 'things' ( within lists)
+
+- Convert terms like 'reviewing' to 'review'
+
+- Consider having an 'applies to' section which lists what the terms apply to. E.g
+which particular product.
+
+- Consider having nested lists for things in and/or. (See applies to of 3Scale)
+
+- Have the nested lists be smart, e.g when its just a few words, just use "X or Y" rather than -X, -Y
+
+
+- Terms to always remove:
+   "in [x] sole discretion",
+   sentences referring to section x.x,

@@ -1,28 +1,35 @@
-API/Web Services might have their own Terms of Service. These are not the responsibility of 3scale.
+YOU CAN:
+- Access and use 3scale’s API Management solution.
+- Allow Customer’s customer access to the Software interfaces
+- Permit 3rd party contractors to access and use software
 
-You are solely responsible for reviewing these Terms from time to time.
+YOU MUST:
+ - review these Terms from time to time.
 
-This Agreement supersedes any prior written or oral agreements between the parties.
+YOU CAN'T:
+ - Sue after 1 year (Any claim or cause of action must be filed within one year.)
+ - Your purchases are not contingent on
+    - Delivery of any future functionality or features
+    - Any oral or written public comments made by us
 
-Any claim or cause of action must be filed within one year.
+APPLIES TO:
+- Any modules or features subsequently
+    - provided by 3scale
+   -  purchased by Customer
 
-3scale shall make the Purchased Services available to you during a subscription term.
+THEY MUST:
+ - Host the Software
+ - Make the Purchased Services available to you during a subscription term.
 
-Your purchases are not contingent on the delivery of any future functionality or features or any oral or written public comments made by us.
+THEY CAN:
+  Update the functionality and user interface from time to time
 
-[CAN :]
 
-Publish web service information
-Define and publish web service contracts
-Contract offered services by the customer
-Monitor (provided/contracted) service usage
-Manage contracts
+MISC:
+- API/Web Services might have their own Terms of Service. These are not the responsibility of 3scale.
 
-3scale hereby provides Customer with a limited, non-exclusive, non-transferable and terminable license to access and use 3scale’s API Management solution (“Software”) solely for Customer’s operations. Customer’s operations include the right to allow Customer’s customer access to the Software interfaces to transact business with Customer. Customer may permit its third party contractors, subject to confidentiality and use obligations at least as restrictive as those set forth in this Agreement, to access and use the Software solely in connection with services provided by such third party contractors to Customer.
+- This Agreement supersedes any prior written or oral agreements between the parties.
 
-The terms of this Agreement shall also apply to any modules or features subsequently provided by 3scale to Customer, and/or that have been purchased by Customer that augment or enhance the current business application.
-
-3scale shall host the Software and may update the functionality and user interface of the Software from time to time in its sole discretion and in accordance with Section 2.3 of this Agreement as part of its ongoing mission to improve the Software and Customers’ use of the Software.
 
 Without limiting the generality of the foregoing the Software used by Customer is subject to the payment obligations set forth in the Fees and Payment Section of this Agreement.
 
