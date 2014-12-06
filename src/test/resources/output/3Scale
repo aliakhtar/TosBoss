@@ -31,17 +31,21 @@ YOU CAN'T:
 
 
 YOU MUST:
- - review these Terms from time to time.
+ - Review these Terms from time to time.
+ - Receive and respond to all calls for support from End Users
+ - Perform initial problem analysis
+ - Diagnose and replicate the problem at Customer’s location
 
 THEY MUST:
  - Host the Software
  - Make the Purchased Services available to you during a subscription term.
+ - Provide online and email technical support
 
 THEY CAN:
   - Update the functionality and user interface from time to time
   - May apply Upgrades to the Platform
      - Upgrades may result in changes in appearance and/or functionality
-  -  own all rights to all intellectual property in the Software.
+  -  Own all rights to all intellectual property in the Software.
 
 THEY CAN'T:
  - Under no circumstances will 3scale withhold the Customer Data from Customer or prevent Customer from obtaining access to the Customer Data.
@@ -52,13 +56,7 @@ MISC:
 
 - This Agreement supersedes any prior written or oral agreements between the parties.
 
-2.5.1 Customer will be responsible for receiving and responding to all calls for support from his End Users for the Software and for performing initial problem analysis, diagnosis, and replication of the problem at Customer’s location. Problems will be deemed replicated if they occur persistently, if it seems reasonably likely they originate in the Software, and if Customer reasonably cooperates with 3scale by providing logs and other information about the problem, its occurrences, and provides assistance to 3scale to help isolate the problem.
-
-2.5.2 3scale provides online and email technical support. Customer shall contact 3scale Support by email at the following address: support@3scale.net. In order for 3scale to process Customer’s support request, Customer shall: (1) Identify himself and the API affected, (2) Describe the nature of the outage, (3) Provide contact information in the form of email for follow up communications
-
-2.5.3 Exceptions: 3scale has no obligation to provide Support Services for problems in the operation or performance of the Software caused by a non-3scale software or hardware product. If 3scale determines that it is necessary to perform Services for a problem caused by a Customer-Generated Error, then 3scale will notify Customer thereof as soon as 3scale is aware of such Customer-Generated Error and, upon Customer’s written request, 3scale will perform such professional services and invoice Customer at 3scale’s then-current published time and materials rates for all such professional services performed by 3scale.
-
-2.6. Service Levels and Maintenance
+- 3scale has no obligation to provide Support for problems caused by a non-3scale product. If 3scale determines that it is necessary to perform Services for a problem caused by a Customer-Generated Error, then 3scale will notify Customer as soon as 3scale is aware and, upon Customer’s written request, 3scale will perform such professional services and invoice Customer at 3scale’s then-current published time and materials rates.
 
 
 2.6.1 3scale guarantees customers of a PRO plan only a 99.5% Software API Uptime (“Uptime”) where Uptime shall mean 100% minus the percentage of time that the 3scale Software is inaccessible or not operational over a calendar month.
