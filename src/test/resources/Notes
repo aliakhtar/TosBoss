@@ -15,7 +15,8 @@ which particular product.
 
 - Consider having nested lists for things in and/or. (See applies to of 3Scale)
 
-- Have the nested lists be smart, e.g when its just a few words, just use "X or Y" rather than -X, -Y
+- Have the nested lists be smart, e.g when its just a few words, just use "X or Y"
+rather than -X, -Y
 
 
 - Terms to always remove:
@@ -24,3 +25,14 @@ which particular product.
    "set forth in",
    "section of this agreement" -> "section"
    "in any way[or form]"
+
+- Remove words in paragraphs and quotes ("bla bla" bla), and remove numbers from the
+start of paragraphs, e.g "1.2 bla bla".
+
+- Consider monitoring the context between paragraphs. So e.g, if the previous
+paragraph ended with colons, and had the words "may not" or "cannot" or "forbidden"
+or such (use POS), and the next paragraph seems to be a list of something, then
+automatically detect and add those things to the 'you can't' list. Same goes for
+'you can' if the last paragraph said 'you may'.
+
+- Make a list of company names, train a classifier to recognize the names.
