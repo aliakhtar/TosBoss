@@ -4,3 +4,11 @@ Apitools reserves the right at any time and from time to time to modify or disco
 
 We reserve the right, at our sole discretion, to modify or replace these Terms of Service by posting the updated terms on the Site.
 
+2.2.3 3scale shall host the Software and may update the functionality and user interface of the Software from time to time in its sole discretion and in accordance with Section 2.3 of this Agreement as part of its ongoing mission to improve the Software and Customers’ use of the Software.
+
+2.3.2 Customer acknowledges that from time to time 3scale may apply Upgrades to the Platform, and that such Upgrades may result in changes the appearance and/or functionality of the Software.
+
+Customer agrees that 3scale shall own all rights, title and interest in and to all intellectual property rights in the Software.
+
+2.6.2 3scale reserves the right to refuse connections/traffic without warning at traffic volumes above 5x the Per second allowed rate (“Per second allowed rate” being 1.75x the average number of queries per second based on the contracted traffic tier)
+

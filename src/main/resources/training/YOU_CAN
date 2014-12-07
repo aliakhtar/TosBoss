@@ -2,4 +2,12 @@
 
 Customer’s operations include the right to allow Customer’s customer access to the Software interfaces to transact business with Customer.
 
-Customer may permit its third party contractors, ~[subject to confidentiality and use obligations at least as restrictive as those set forth in this Agreement,~] to access and use the Software ~[solely in connection with services provided by such third party contractors to Customer]~.
+Customer may permit its third party contractors, subject to confidentiality and use obligations at least as restrictive as those set forth in this Agreement, to access and use the Software solely in connection with services provided by such third party contractors to Customer.
+
+2.2.5 The parties acknowledge, that as between them, all data entered by Customer or its representatives into the Software or 3scale’s systems (“Customer Data”) is owned by Customer. Under no circumstances will 3scale withhold the Customer Data from Customer or prevent Customer from obtaining access to the Customer Data.
+
+2.6.3 Customer can deploy API Traffic Management agents in as many environments as desired without additional license cost – both production and non-production.
+
+4.6 Transaction History: unless Customer account has been disabled by 3scale or otherwise, Customer will be able to access to its monetary transactions in the system by logging in to the system with their access user name and password.
+
+4.7 Yearly payment & Applicable Discount: Customer shall have the option of making yearly payments for 12 Months of Software licensing.
