@@ -24,3 +24,4 @@ PubNub will keep all statistical data private, and will not share this data with
 
 PubNub acts solely as a network transport, and does not actively filter or inspect the data sent by Customer or Customer’s end users under normal circumstances.
 
+Customer has sole control over the Customer Data uploaded in the PubNub Services, and acknowledges PubNub has no control of the Customer Data.
