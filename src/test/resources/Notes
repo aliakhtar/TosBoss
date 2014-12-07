@@ -37,7 +37,8 @@ rather than -X, -Y
    "we are able to",
    "subject to bla bla bla",
    "without ___ foregoing",
-   "but has no obligation to"
+   "but has no obligation to",
+   ", further ___",
 
 - Remove words in paragraphs and quotes ("bla bla" bla), and remove numbers from the
 start of paragraphs, e.g "1.2 bla bla". Also remove stuff in brackets that contains
@@ -63,3 +64,8 @@ commas, or (1), (2) etc, or (i), (ii), or (a)
 
 
 - Ignore headings. E.g 6.1 Section name should be ignored, instead process 6.1.1.
+
+- Use co-ref on things like 'these'. For words like 'these' or 'those', run co-ref
+on previous sentences, even if they didn't themselves get classified. Also: its, their, his, her, etc. PRP$
+
+- Hide sentence fragments that start with ", including"
