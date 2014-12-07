@@ -32,6 +32,7 @@ rather than -X, -Y
    "including without limitation" / "including but not limited to",
    "at any time", "without prior notice",
    words like "additionally",
+   "we may",
 
 - Remove words in paragraphs and quotes ("bla bla" bla), and remove numbers from the
 start of paragraphs, e.g "1.2 bla bla". Also remove stuff in brackets that contains
