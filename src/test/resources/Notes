@@ -70,3 +70,5 @@ commas, or (1), (2) etc, or (i), (ii), or (a)
 on previous sentences, even if they didn't themselves get classified. Also: its, their, his, her, etc. PRP$
 
 - Hide sentence fragments that start with ", including"
+
+- Ignore any matching sentences that end in colons
