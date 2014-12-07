@@ -1,9 +1,11 @@
-package com.github.aliakhtar.tosBoss;
+package com.github.aliakhtar.tosBoss.util;
+
+import com.github.aliakhtar.tosBoss.shared.Category;
 
 import java.io.File;
 import java.util.Scanner;
 
-public abstract class BaseTest
+public abstract class IO
 {
 
     public static String readFile(String fileName)
@@ -11,7 +13,7 @@ public abstract class BaseTest
         StringBuilder result = new StringBuilder("");
 
         //Get file from resources folder
-        ClassLoader classLoader = BaseTest.class.getClassLoader();
+        ClassLoader classLoader = IO.class.getClassLoader();
         File file = new File(classLoader.getResource(fileName).getFile());
 
         try
@@ -31,4 +33,14 @@ public abstract class BaseTest
         return result.toString();
     }
 
+
+    public static String readTrainingFile( Category cat)
+    {
+        return readTrainingFile( cat.name() );
+    }
+
+    public static String readTrainingFile(String path)
+    {
+        return readFile("training/" + path);
+    }
 }

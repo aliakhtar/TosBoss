@@ -1,4 +1,4 @@
-package com.github.aliakhtar.tosBoss;
+package com.github.aliakhtar.tosBoss.server;
 /*
  * Copyright 2013 Red Hat, Inc.
  *

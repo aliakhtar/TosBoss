@@ -1,6 +1,6 @@
 package com.github.aliakhtar.tosBoss.nlp;
 
-import com.github.aliakhtar.tosBoss.BaseTest;
+import com.github.aliakhtar.tosBoss.util.IO;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -18,10 +18,10 @@ public class StanfordNlpTest
     @Test
     public void testParagraphProcessing()
     {
-        String text = BaseTest.readFile("PosTest1");
+        String text = IO.readFile("PosTest1");
 
         Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos, lemma, parse, depparse");
+        props.put("annotators", "tokenize, ssplit, pos");
 
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
