@@ -49,3 +49,5 @@ automatically detect and add those things to the 'you can't' list. Same goes for
 
 - If a result item is too long, scan it to see if it contains lists, either with just
 commas, or (1), (2) etc, or (i), (ii), or (a)
+
+- Ignore any final result that ends with colons, e.g "You agree to bla bla if bla bla including:",
