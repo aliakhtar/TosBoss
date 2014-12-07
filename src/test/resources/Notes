@@ -33,6 +33,8 @@ rather than -X, -Y
    "at any time", "without prior notice",
    words like "additionally",
    "we may",
+   "of course",
+   "we are able to",
 
 - Remove words in paragraphs and quotes ("bla bla" bla), and remove numbers from the
 start of paragraphs, e.g "1.2 bla bla". Also remove stuff in brackets that contains
