@@ -37,10 +37,12 @@ rather than -X, -Y
    "we are able to",
    "subject to bla bla bla",
    "without ___ foregoing",
+   "but has no obligation to"
 
 - Remove words in paragraphs and quotes ("bla bla" bla), and remove numbers from the
 start of paragraphs, e.g "1.2 bla bla". Also remove stuff in brackets that contains
-more than one word (bla bla)
+more than one word (bla bla). Also remove (x) from the start, after determining
+to put them in a list.
 
 - Consider monitoring the context between paragraphs. So e.g, if the previous
 paragraph ended with colons, and had the words "may not" or "cannot" or "forbidden"
@@ -58,3 +60,6 @@ commas, or (1), (2) etc, or (i), (ii), or (a)
 
 - Always hide the word "also" by default
 - Also hide "for example"
+
+
+- Ignore headings. E.g 6.1 Section name should be ignored, instead process 6.1.1.
