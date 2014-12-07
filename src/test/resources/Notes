@@ -24,7 +24,9 @@ rather than -X, -Y
    sentences referring to section x.x,
    "set forth in",
    "section of this agreement" -> "section"
-   "in any way[or form]"
+   "in any way[or form]",
+   "you agree that" / "you acknowledge that",
+   "reserves the right" to bla bla,
 
 - Remove words in paragraphs and quotes ("bla bla" bla), and remove numbers from the
 start of paragraphs, e.g "1.2 bla bla".
