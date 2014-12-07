@@ -1,48 +1,26 @@
 package com.github.aliakhtar.tosBoss.nlp;
 
 import com.github.aliakhtar.tosBoss.util.IO;
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.util.CoreMap;
+import com.github.aliakhtar.tosBoss.util.NLP;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 
 public class StanfordNlpTest
 {
 
     @Test
-    public void testParagraphProcessing()
+    public void testPosTagging()
     {
         String text = IO.readFile("PosTest1");
 
-        Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos");
+        List<String> result = NLP.getPosTags(text);
+        assertNotNull( result );
+        System.out.println(result.toString() );
 
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-
-        System.out.println("Starting");
-        long start = System.nanoTime();
-        Annotation doc = new Annotation(text);
-        pipeline.annotate(doc);
-        long elapsed = System.nanoTime() - start;
-
-        List<CoreMap> sentences = doc.get(CoreAnnotations.SentencesAnnotation.class);
-        for (CoreMap s : sentences)
-        {
-            for (CoreLabel token : s.get(CoreAnnotations.TokensAnnotation.class))
-            {
-                String word = token.get(CoreAnnotations.TextAnnotation.class);
-                String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
-
-                System.out.println(word + " , " + pos);
-            }
-        }
-
-        System.out.println("Elapsed: " + TimeUnit.NANOSECONDS.toSeconds(elapsed));
+        assertFalse( result.toString(), result.isEmpty() );
     }
 }
