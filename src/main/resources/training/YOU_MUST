@@ -108,3 +108,9 @@ You agree to cooperate with Intuit in the submission process and to answer quest
 
 You shall notify Intuit of any security breach of End User Data within your system, network or application as soon as reasonably practicable to apprise Intuit of such event.
 
+If your Developer Application(s) exchange credit card data with Intuit products or services, you must only distribute Developer Applications that (i) comply with local laws, credit card association and processor regulations including, but not limited to, all requirements set forth in the Payment Card Industry (“PCI”) Data Security Standard and the Payment Application Data Security Standards, as applicable (which can be found at https://www.pcisecuritystandards.org/) for protecting cardholder data, (ii) ensure secure data handling in compliance with all regulations, including industry standard secure access mechanisms such as SSL based HTTPS connections.
+
+In the event that access is denied to Intuit’s credit card services you will continue to treat cardholder data as confidential and continue to protect cardholder data in compliance with local laws, credit card association and processor regulations including, but not limited to, all requirements set forth in the Payment Card Industry Data Security Standard for protecting cardholder data.
+
+Upon request, you will provide documentation evidencing your compliance with all applicable PCI requirements.
+
