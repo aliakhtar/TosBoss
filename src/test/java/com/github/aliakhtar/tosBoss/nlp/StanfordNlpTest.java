@@ -21,11 +21,12 @@ public class StanfordNlpTest
         String text = BaseTest.readFile("PosTest1");
 
         Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos, lemma");
+        props.put("annotators", "tokenize, ssplit, pos, lemma, parse, depparse");
 
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-        long start = System.nanoTime();
 
+        System.out.println("Starting");
+        long start = System.nanoTime();
         Annotation doc = new Annotation(text);
         pipeline.annotate(doc);
         long elapsed = System.nanoTime() - start;
@@ -37,6 +38,7 @@ public class StanfordNlpTest
             {
                 String word = token.get(CoreAnnotations.TextAnnotation.class);
                 String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
+
                 System.out.println(word + " , " + pos);
             }
         }
