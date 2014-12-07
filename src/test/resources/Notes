@@ -35,6 +35,7 @@ rather than -X, -Y
    "we may",
    "of course",
    "we are able to",
+   "subject to bla bla bla",
 
 - Remove words in paragraphs and quotes ("bla bla" bla), and remove numbers from the
 start of paragraphs, e.g "1.2 bla bla". Also remove stuff in brackets that contains
