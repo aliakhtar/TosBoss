@@ -8,7 +8,6 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
 import edu.stanford.nlp.semgraph.SemanticGraphEdge;
-import edu.stanford.nlp.trees.GrammaticalRelation;
 import edu.stanford.nlp.util.CoreMap;
 
 import java.util.ArrayList;
@@ -28,10 +27,10 @@ public class NLP
             = Pattern.compile("\\([\\S]*\\s[^)]*\\)");
 
 
-    public enum DependencyType
+    public enum Relationship
     {
         GOVERNER,
-
+        DEPENDENT,
     }
 
 
@@ -107,25 +106,21 @@ public class NLP
     }
 
 
-    public static void getDependency(CoreMap sentence)
+    public static IndexedWord getDependency(String word, Relationship type,
+                                            CoreMap sentence)
     {
         SemanticGraph deps
                 = sentence.get(SemanticGraphCoreAnnotations.CollapsedDependenciesAnnotation.class);
 
-        int j = 0;
         for (SemanticGraphEdge edge : deps.edgeIterable() )
         {
-            j++;
-            System.out.println("------EDGE DEPENDENCY: "+j);
-            IndexedWord dep = edge.getDependent();
-            String dependent = dep.word();
-            int dependent_index = dep.index();
-            IndexedWord gov = edge.getGovernor();
-            String governor = gov.word();
-            int governor_index = gov.index();
-            GrammaticalRelation relation = edge.getRelation();
-            System.out.println("No:"+j+" Relation: "+relation.toString()+" Dependent ID: "+dep.index()+" Dependent: "+dependent.toString()+" Governor ID: "+gov.index()+" Governor: "+gov.toString());
+            IndexedWord w = (type == Relationship.DEPENDENT)
+                                ? edge.getDependent() : edge.getGovernor();
+
+            if (w.toString().equals(word))
+                return w;
         }
+        return null;
     }
 
 
