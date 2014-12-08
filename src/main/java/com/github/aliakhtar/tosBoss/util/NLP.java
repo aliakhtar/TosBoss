@@ -106,21 +106,23 @@ public class NLP
     }
 
 
-    public static IndexedWord getDependency(String word, Relationship type,
-                                            CoreMap sentence)
+    public static void getDependency(CoreMap sentence)
     {
         SemanticGraph deps
                 = sentence.get(SemanticGraphCoreAnnotations.CollapsedDependenciesAnnotation.class);
 
         for (SemanticGraphEdge edge : deps.edgeIterable() )
         {
-            IndexedWord w = (type == Relationship.DEPENDENT)
-                                ? edge.getDependent() : edge.getGovernor();
-
-            if (w.toString().equals(word))
-                return w;
+            IndexedWord w = edge.getDependent();
+            System.out.println( w + " : " + getPos(w)  );
         }
-        return null;
+    }
+
+    public static String getPos(IndexedWord word)
+    {
+        if (word == null)
+            return  null;
+        return word.get(CoreAnnotations.PartOfSpeechAnnotation.class);
     }
 
 
