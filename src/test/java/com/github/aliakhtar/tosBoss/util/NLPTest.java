@@ -1,5 +1,6 @@
 package com.github.aliakhtar.tosBoss.util;
 
+import edu.stanford.nlp.util.CoreMap;
 import org.junit.Test;
 
 import java.util.List;
@@ -43,5 +44,15 @@ public class NLPTest
 
         assertEquals("lol", NLP.cleanUp("lol (some bullshit)")  );
         assertEquals("lol", NLP.cleanUp("lol (some bullshit) (\"some more bullshit\")"));
+    }
+
+
+    @Test
+    public void testDepParse() throws Exception
+    {
+        List<CoreMap> sentences = NLP.getCoreMap("My name is Bob. I like to eat.");
+
+        System.out.println(sentences);
+        assertFalse( sentences.isEmpty() );
     }
 }

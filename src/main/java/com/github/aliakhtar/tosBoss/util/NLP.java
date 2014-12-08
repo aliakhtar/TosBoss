@@ -14,10 +14,10 @@ import java.util.regex.Pattern;
 
 public class NLP
 {
-    private static final StanfordCoreNLP POS_CORE = buildPosCore();
+    public static final StanfordCoreNLP POS_CORE = buildPosCore();
 
     private static final Pattern KILL_NUMERIC_START
-            = Pattern.compile("^\\d\\.?[\\d]*");
+            = Pattern.compile("\\d\\.[\\d.]*");
 
     private final static Pattern KILL_PARANTHESIS_STUFF
             = Pattern.compile("\\([\\S]*\\s[^)]*\\)");
@@ -67,6 +67,15 @@ public class NLP
         return result;
     }
 
+    public static List<CoreMap> getCoreMap(String text)
+    {
+        text = cleanUp(text);
+        Annotation a = new Annotation( text.trim() );
+        POS_CORE.annotate(a);
+
+        return a.get(CoreAnnotations.SentencesAnnotation.class);
+    }
+
     public static List<String> getPosTags(String text)
     {
         Annotation doc = new Annotation(text);
@@ -89,7 +98,7 @@ public class NLP
     private static StanfordCoreNLP buildPosCore()
     {
         Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos");
+        props.put("annotators", "tokenize, ssplit, pos, lemma, depparse");
 
         return new StanfordCoreNLP(props);
     }
