@@ -7,12 +7,26 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
 public class NLP
 {
     private static final StanfordCoreNLP POS_CORE = buildPosCore();
+
+    public static Collection<String>
+            getPosTags(Collection<String>multipleLinesOfText)
+    {
+        List<String> tagsList = new ArrayList<>( multipleLinesOfText.size() );
+
+        for (String line : multipleLinesOfText )
+        {
+            tagsList.addAll( getPosTags(line) );
+        }
+
+        return tagsList;
+    }
 
     public static List<String> getPosTags(String text)
     {

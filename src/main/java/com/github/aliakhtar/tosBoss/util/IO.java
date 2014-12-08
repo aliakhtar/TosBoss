@@ -3,6 +3,8 @@ package com.github.aliakhtar.tosBoss.util;
 import com.github.aliakhtar.tosBoss.shared.Category;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public abstract class IO
@@ -34,9 +36,21 @@ public abstract class IO
     }
 
 
-    public static String readTrainingFile( Category cat)
+    public static List<String> readTrainingFile( Category cat)
     {
-        return readTrainingFile( cat.name() );
+        String fullText = readTrainingFile( cat.name() );
+        String[] lines = fullText.split("\n");
+        List<String> result = new ArrayList<>( lines.length );
+        for (String line : lines)
+        {
+            line = line.trim();
+            if (line.isEmpty())
+                continue;
+
+            result.add( line );
+        }
+
+        return result;
     }
 
     public static String readTrainingFile(String path)
