@@ -6,14 +6,36 @@ import com.github.aliakhtar.tosBoss.util.NLP;
 import com.github.aliakhtar.tosBoss.util.Probability;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 public class Classifier
 {
-    private Classifier() {}
+    private final Collection<ClassDef> classes;
 
-    public static void train()
+    private Classifier(Collection<ClassDef> classes)
+    {
+        this.classes = classes;
+    }
+
+    public void classifySentence(String sentence)
+    {
+        List<Double> probs = new ArrayList<>( classes.size() );
+        List<String> posTags = NLP.getPosTags(sentence);
+        for (ClassDef clazz : classes)
+        {
+            double prob = clazz.getProbability(posTags);
+            System.out.println(clazz + " , " + prob);
+            probs.add( prob );
+        }
+
+        Collections.sort(probs);
+        System.out.println( probs );
+
+    }
+
+    public static Classifier train()
     {
         List<ClassDef> classes = new ArrayList<>();
 
@@ -40,6 +62,6 @@ public class Classifier
         }
 
         Collections.sort( classes );
-        System.out.println( classes.toString() );
+        return new Classifier( classes );
     }
 }
