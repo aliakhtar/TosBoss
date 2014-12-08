@@ -21,13 +21,18 @@ public class ClassifierTest
 
         for (Category cat : Category.values())
         {
+            System.out.println("In cat: " + cat);
             int hCount = 0;
             int mCount = 0;
             //String input = IO.readFile("example_tos/Sprint.ly");
             List<CoreMap> sentences = IO.readTrainingFile( cat );
 
+            System.out.println("Got " + sentences.size() + " sentences");
+            int i = 0;
             for (CoreMap sentence : sentences)
             {
+                i++;
+                System.out.println("Sentence # " + i + " / " + sentences.size());
                 Map<Double, ClassDef> result = c.classifySentence(sentence);
                 double first = result.entrySet().iterator().next().getKey();
                 if (result.get(first).getCat() == cat)
