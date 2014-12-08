@@ -48,7 +48,7 @@ public class ClassDef implements Comparable<ClassDef>
         for (String pos : posTags)
         {
             int tagCount = getPosCount(pos);
-            featureProbabilities += Probability.calc(tagCount, this.posTags.size() );
+            featureProbabilities *= Probability.calc(tagCount, this.posTags.size() );
         }
 
         try
