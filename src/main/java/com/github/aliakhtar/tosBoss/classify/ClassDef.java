@@ -1,8 +1,10 @@
 package com.github.aliakhtar.tosBoss.classify;
 
 import com.github.aliakhtar.tosBoss.shared.Category;
+import com.github.aliakhtar.tosBoss.util.Probability;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Definition of an entity that will be classified by the classifier.
@@ -40,10 +42,30 @@ public class ClassDef implements Comparable<ClassDef>
         this.probability = probability;
     }
 
-    /*public double getProbability(String sentence)
+    public double getProbability(List<String> posTags)
     {
-        List
-    }*/
+        double featureProbabilities = 0;
+        for (String pos : posTags)
+        {
+            int tagCount = getPosCount(pos);
+            featureProbabilities += Probability.calc(tagCount, this.posTags.size() );
+        }
+
+        return featureProbabilities * probability;
+    }
+
+    private int getPosCount(String inputPos)
+    {
+        int count = 0;
+
+        for (String pos : posTags)
+        {
+            if (pos.equals(inputPos))
+                count = count + 1;
+        }
+
+        return count;
+    }
 
     @Override
     public String toString()
