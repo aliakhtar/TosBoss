@@ -53,6 +53,10 @@ public class NLPTest
         List<CoreMap> sentences = NLP.getCoreMap("My name is Bob. I like to eat.");
 
         System.out.println(sentences);
-        assertFalse( sentences.isEmpty() );
+        for (CoreMap s : sentences)
+        {
+            System.out.println(s);
+            NLP.getDependency(s);
+        }
     }
 }
