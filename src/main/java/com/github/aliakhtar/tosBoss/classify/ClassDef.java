@@ -51,7 +51,15 @@ public class ClassDef implements Comparable<ClassDef>
             featureProbabilities += Probability.calc(tagCount, this.posTags.size() );
         }
 
-        return featureProbabilities * probability;
+        try
+        {
+            return ( featureProbabilities * probability);
+        }
+        catch (ArithmeticException e)
+        {
+            e.printStackTrace();
+            return 0;
+        }
     }
 
     private int getPosCount(String inputPos)

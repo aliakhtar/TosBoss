@@ -25,12 +25,8 @@ public class Classifier
             probs.put(clazz.getProbability(posTags), clazz );
         }
 
-        Map<Double, ClassDef> sortedMap = new TreeMap<>(  );
-        List<Double> probKeys = new ArrayList<>( sortedMap.size() );
-        probKeys.addAll(sortedMap.keySet());
-        Collections.sort( probKeys );
-
-        for (Double p : probKeys)
+        Map<Double, ClassDef> sortedMap = new TreeMap<>( Collections.reverseOrder() );
+        for (Double p : probs.keySet() )
         {
             sortedMap.put(p, probs.get(p));
         }
