@@ -2,6 +2,7 @@ package com.github.aliakhtar.tosBoss.classify;
 
 import com.github.aliakhtar.tosBoss.shared.Category;
 import com.github.aliakhtar.tosBoss.util.IO;
+import edu.stanford.nlp.util.CoreMap;
 
 import java.util.HashMap;
 import java.util.List;
@@ -10,7 +11,6 @@ import java.util.Map;
 public class ClassifierTest
 {
 
-    //@Test
     public void testClassifySentence() throws Exception
     {
         Map<Category, Integer> hits = new HashMap<>();
@@ -22,10 +22,9 @@ public class ClassifierTest
             int hCount = 0;
             int mCount = 0;
             //String input = IO.readFile("example_tos/Sprint.ly");
-            //List<String> sentences = NLP.getSentences( input );
-            List<String> sentences = IO.readTrainingFile( cat );
+            List<CoreMap> sentences = IO.readTrainingFile( cat );
 
-            for (String sentence : sentences)
+            for (CoreMap sentence : sentences)
             {
                 Map<Double, ClassDef> result = c.classifySentence(sentence);
                 double first = result.entrySet().iterator().next().getKey();

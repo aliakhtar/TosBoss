@@ -2,7 +2,6 @@ package com.github.aliakhtar.tosBoss.classify;
 
 import com.github.aliakhtar.tosBoss.shared.Category;
 import com.github.aliakhtar.tosBoss.util.IO;
-import com.github.aliakhtar.tosBoss.util.NLP;
 import com.github.aliakhtar.tosBoss.util.Probability;
 import edu.stanford.nlp.util.CoreMap;
 
@@ -17,13 +16,12 @@ public class Classifier
         this.classes = classes;
     }
 
-    public Map<Double, ClassDef> classifySentence(String sentence)
+    public Map<Double, ClassDef> classifySentence(CoreMap sentence)
     {
         Map<Double, ClassDef> probs = new HashMap<>( classes.size() );
-        List<String> posTags = NLP.getPosTags(sentence);
         for (ClassDef clazz : classes)
         {
-            probs.put(clazz.getProbability(posTags), clazz );
+            probs.put(clazz.getProbability(sentence), clazz );
         }
 
         Map<Double, ClassDef> sortedMap = new TreeMap<>( Collections.reverseOrder() );
