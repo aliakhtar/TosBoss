@@ -54,6 +54,13 @@ public class ClassDef implements Comparable<ClassDef>
     @Override
     public int compareTo(ClassDef o)
     {
-        return Double.compare(probability, o.probability );
+        //Show highest probs on top
+        if ( probability < o.probability )
+            return 1;
+
+        if (probability > o.probability)
+            return  -1;
+
+        return 0;
     }
 }
