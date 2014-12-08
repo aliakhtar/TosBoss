@@ -58,7 +58,7 @@ public class Classifier
         {
             double prob = Probability.calc(clazz.getTrainingNodeCount(),
                                            allTrainingNodes.size() );
-            clazz.setProbability( prob );
+            clazz.setProbability( 1 );
         }
 
         Collections.sort( classes );
