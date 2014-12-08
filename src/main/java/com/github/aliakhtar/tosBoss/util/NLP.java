@@ -10,10 +10,34 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 public class NLP
 {
     private static final StanfordCoreNLP POS_CORE = buildPosCore();
+
+    private static final Pattern KILL_NUMERIC_START
+            = Pattern.compile("^\\d\\.?[\\d]*");
+
+    private final static Pattern KILL_PARANTHESIS_STUFF
+            = Pattern.compile("\\([\\S]*\\s[^)]*\\)");
+
+
+    public static String cleanUp(String input)
+    {
+        input = input.trim();
+
+        input = input.replaceAll( KILL_NUMERIC_START.pattern(), "" );
+        input  = input.trim();
+
+        input = input.replace("  ", " ");
+        input = input.replaceAll(KILL_PARANTHESIS_STUFF.pattern(), "");
+
+        input = input.replace("  ", " ");
+        return input.trim();
+    }
+
+
 
     public static Collection<String>
             getPosTags(Collection<String>multipleLinesOfText)

@@ -2,7 +2,6 @@ package com.github.aliakhtar.tosBoss.classify;
 
 import com.github.aliakhtar.tosBoss.shared.Category;
 import com.github.aliakhtar.tosBoss.util.IO;
-import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.Map;
 public class ClassifierTest
 {
 
-    @Test
+    //@Test
     public void testClassifySentence() throws Exception
     {
         Map<Category, Integer> hits = new HashMap<>();
