@@ -16,7 +16,7 @@ public class Classifier
         this.classes = classes;
     }
 
-    public void classifySentence(String sentence)
+    public Map<Double, ClassDef> classifySentence(String sentence)
     {
         Map<Double, ClassDef> probs = new HashMap<>( classes.size() );
         List<String> posTags = NLP.getPosTags(sentence);
@@ -31,7 +31,8 @@ public class Classifier
             sortedMap.put(p, probs.get(p));
         }
 
-        System.out.println(sortedMap);
+        //return sortedMap.get(0).getCat();
+        return sortedMap;
     }
 
     public static Classifier train()
