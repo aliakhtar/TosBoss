@@ -5,10 +5,7 @@ import com.github.aliakhtar.tosBoss.util.IO;
 import com.github.aliakhtar.tosBoss.util.NLP;
 import com.github.aliakhtar.tosBoss.util.Probability;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Classifier
 {
@@ -21,18 +18,24 @@ public class Classifier
 
     public void classifySentence(String sentence)
     {
-        List<Double> probs = new ArrayList<>( classes.size() );
+        Map<Double, ClassDef> probs = new HashMap<>( classes.size() );
         List<String> posTags = NLP.getPosTags(sentence);
         for (ClassDef clazz : classes)
         {
-            double prob = clazz.getProbability(posTags);
-            System.out.println(clazz + " , " + prob);
-            probs.add( prob );
+            probs.put(clazz.getProbability(posTags), clazz );
         }
 
-        Collections.sort(probs);
-        System.out.println( probs );
+        Map<Double, ClassDef> sortedMap = new TreeMap<>(  );
+        List<Double> probKeys = new ArrayList<>( sortedMap.size() );
+        probKeys.addAll(sortedMap.keySet());
+        Collections.sort( probKeys );
 
+        for (Double p : probKeys)
+        {
+            sortedMap.put(p, probs.get(p));
+        }
+
+        System.out.println(sortedMap);
     }
 
     public static Classifier train()

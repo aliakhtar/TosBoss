@@ -70,7 +70,8 @@ public class ClassDef implements Comparable<ClassDef>
     @Override
     public String toString()
     {
-        return "ClassDef{ " + cat  + " = " + probability + " }";
+        //return "ClassDef{ " + cat  + " = " + probability + " }";
+        return "ClassDef{ " + cat  + " }";
     }
 
     @Override
