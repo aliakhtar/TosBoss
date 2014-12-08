@@ -1,8 +1,12 @@
 package com.github.aliakhtar.tosBoss.classify;
 
 import com.github.aliakhtar.tosBoss.shared.Category;
+import com.github.aliakhtar.tosBoss.util.NLP;
 import com.github.aliakhtar.tosBoss.util.Probability;
+import edu.stanford.nlp.semgraph.SemanticGraphEdge;
+import edu.stanford.nlp.util.CoreMap;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -11,7 +15,9 @@ import java.util.List;
  */
 public class ClassDef implements Comparable<ClassDef>
 {
-    private final Collection<String> posTags;
+    private final Collection<CoreMap> sentences;
+
+    private final Collection<Feature> features;
 
     private final int trainingNodeCount;
 
@@ -19,10 +25,20 @@ public class ClassDef implements Comparable<ClassDef>
 
     private double probability = 0;
 
-    public ClassDef(Category cat, int trainingNodeCount, Collection<String> posTags)
+    public ClassDef(Category cat, int trainingNodeCount, Collection<CoreMap> sentences)
     {
-        this.posTags = posTags;
+        this.sentences = sentences;
         this.trainingNodeCount = trainingNodeCount;
+
+        features = new ArrayList<>();
+        for (CoreMap s : sentences)
+        {
+            for (SemanticGraphEdge edge : NLP.getDependencies(s).edgeIterable() )
+            {
+                features.add( new Feature(edge) );
+            }
+        }
+
         this.cat = cat;
     }
 

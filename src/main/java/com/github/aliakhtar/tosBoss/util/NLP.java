@@ -7,7 +7,6 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
-import edu.stanford.nlp.semgraph.SemanticGraphEdge;
 import edu.stanford.nlp.util.CoreMap;
 
 import java.util.ArrayList;
@@ -106,16 +105,9 @@ public class NLP
     }
 
 
-    public static void getDependency(CoreMap sentence)
+    public static SemanticGraph getDependencies(CoreMap sentence)
     {
-        SemanticGraph deps
-                = sentence.get(SemanticGraphCoreAnnotations.CollapsedDependenciesAnnotation.class);
-
-        for (SemanticGraphEdge edge : deps.edgeIterable() )
-        {
-            IndexedWord w = edge.getDependent();
-            System.out.println( w + " : " + getPos(w)  );
-        }
+        return sentence.get(SemanticGraphCoreAnnotations.CollapsedDependenciesAnnotation.class);
     }
 
     public static String getPos(IndexedWord word)

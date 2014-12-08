@@ -1,9 +1,9 @@
 package com.github.aliakhtar.tosBoss.util;
 
 import com.github.aliakhtar.tosBoss.shared.Category;
+import edu.stanford.nlp.util.CoreMap;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -36,25 +36,16 @@ public abstract class IO
     }
 
 
-    public static List<String> readTrainingFile( Category cat)
+    public static List<CoreMap> readTrainingFile( Category cat)
     {
         String fullText = readTrainingFile( cat.name() );
-        String[] lines = fullText.split("\n");
-        List<String> result = new ArrayList<>( lines.length );
-        for (String line : lines)
-        {
-            line = line.trim();
-            if (line.isEmpty())
-                continue;
 
-            result.add( line );
-        }
 
-        return result;
+        return NLP.getCoreMap(fullText);
     }
 
     public static String readTrainingFile(String path)
     {
-        return readFile("training/" + path);
+        return NLP.cleanUp(readFile("training/" + path));
     }
 }

@@ -4,6 +4,7 @@ import com.github.aliakhtar.tosBoss.shared.Category;
 import com.github.aliakhtar.tosBoss.util.IO;
 import com.github.aliakhtar.tosBoss.util.NLP;
 import com.github.aliakhtar.tosBoss.util.Probability;
+import edu.stanford.nlp.util.CoreMap;
 
 import java.util.*;
 
@@ -43,13 +44,15 @@ public class Classifier
 
         List<String> allTrainingNodes = new ArrayList<>();
 
+        long totalNodes = 0;
 
         for (Category cat : Category.values())
         {
-            List<String> trainingNodes = IO.readTrainingFile(cat);
-            allTrainingNodes.addAll( trainingNodes );
+            List<CoreMap> trainingNodes = IO.readTrainingFile(cat);
+            totalNodes+= trainingNodes.size();
+
             ClassDef clazz = new ClassDef(cat, trainingNodes.size(),
-                                          NLP.getPosTags(trainingNodes));
+                                          trainingNodes);
 
             System.out.println( cat + " , nodes: " + trainingNodes.size() );
             System.out.println("All nodes: " + allTrainingNodes.size() );
