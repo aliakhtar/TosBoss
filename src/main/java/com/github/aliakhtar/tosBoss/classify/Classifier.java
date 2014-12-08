@@ -6,6 +6,7 @@ import com.github.aliakhtar.tosBoss.util.NLP;
 import com.github.aliakhtar.tosBoss.util.Probability;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Classifier
@@ -35,7 +36,10 @@ public class Classifier
         {
             double prob = Probability.calc(clazz.getTrainingNodeCount(),
                                            allTrainingNodes.size() );
-            System.out.println(clazz + " = " + prob );
+            clazz.setProbability( prob );
         }
+
+        Collections.sort( classes );
+        System.out.println( classes.toString() );
     }
 }

@@ -7,13 +7,15 @@ import java.util.Collection;
 /**
  * Definition of an entity that will be classified by the classifier.
  */
-public class ClassDef
+public class ClassDef implements Comparable<ClassDef>
 {
     private final Collection<String> posTags;
 
     private final int trainingNodeCount;
 
     private final Category cat;
+
+    private double probability = 0;
 
     public ClassDef(Category cat, int trainingNodeCount, Collection<String> posTags)
     {
@@ -32,9 +34,26 @@ public class ClassDef
         return cat;
     }
 
+
+    public void setProbability(double probability)
+    {
+        this.probability = probability;
+    }
+
+    /*public double getProbability(String sentence)
+    {
+        List
+    }*/
+
     @Override
     public String toString()
     {
-        return "ClassDef{ " + cat  + "}";
+        return "ClassDef{ " + cat  + " = " + probability + " }";
+    }
+
+    @Override
+    public int compareTo(ClassDef o)
+    {
+        return Double.compare(probability, o.probability );
     }
 }

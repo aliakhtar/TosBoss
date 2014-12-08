@@ -22,10 +22,25 @@ public class NLP
 
         for (String line : multipleLinesOfText )
         {
-            tagsList.addAll( getPosTags(line) );
+            tagsList.addAll(getPosTags(line));
         }
 
         return tagsList;
+    }
+
+    public static List<String> getSentences(String text)
+    {
+        Annotation doc = new Annotation(text);
+        POS_CORE.annotate(doc);
+        List<CoreMap> sentences = doc.get(CoreAnnotations.SentencesAnnotation.class);
+        List<String> result = new ArrayList<>();
+
+        for (CoreMap s : sentences)
+        {
+            result.add( s.get(CoreAnnotations.TextAnnotation.class) );
+        }
+
+        return result;
     }
 
     public static List<String> getPosTags(String text)
