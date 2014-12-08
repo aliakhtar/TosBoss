@@ -14,4 +14,16 @@ public class Probability
             return 0;
         }
     }
+
+    public static double calcWithSmoothing(double numOfEvents, double numOfOutcomes)
+    {
+        try
+        {
+            return (numOfEvents + 1) / ( numOfOutcomes + 1);
+        }
+        catch (ArithmeticException e)
+        {
+            return 0;
+        }
+    }
 }
