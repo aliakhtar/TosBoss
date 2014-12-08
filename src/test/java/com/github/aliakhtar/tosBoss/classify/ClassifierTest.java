@@ -16,12 +16,12 @@ public class ClassifierTest
     {
         Map<Category, Integer> hits = new HashMap<>();
         Map<Category, Integer> misses = new HashMap<>();
+        Classifier c = Classifier.train();
 
         for (Category cat : Category.values())
         {
             int hCount = 0;
             int mCount = 0;
-            Classifier c = Classifier.train();
             //String input = IO.readFile("example_tos/Sprint.ly");
             //List<String> sentences = NLP.getSentences( input );
             List<String> sentences = IO.readTrainingFile( cat );

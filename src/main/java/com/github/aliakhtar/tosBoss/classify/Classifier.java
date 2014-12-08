@@ -51,6 +51,8 @@ public class Classifier
             ClassDef clazz = new ClassDef(cat, trainingNodes.size(),
                                           NLP.getPosTags(trainingNodes));
 
+            System.out.println( cat + " , nodes: " + trainingNodes.size() );
+            System.out.println("All nodes: " + allTrainingNodes.size() );
             classes.add( clazz );
         }
 
@@ -58,10 +60,13 @@ public class Classifier
         {
             double prob = Probability.calc(clazz.getTrainingNodeCount(),
                                            allTrainingNodes.size() );
-            clazz.setProbability( 1 );
+
+            clazz.setProbability( prob );
+            //clazz.setProbability( 1 );
         }
 
         Collections.sort( classes );
+        System.out.println(classes);
         return new Classifier( classes );
     }
 }
