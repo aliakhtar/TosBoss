@@ -1,6 +1,5 @@
 package com.github.aliakhtar.tosBoss.util;
 
-import edu.stanford.nlp.util.CoreMap;
 import org.junit.Test;
 
 import java.util.List;
@@ -47,16 +46,5 @@ public class NLPTest
     }
 
 
-    @Test
-    public void testDepParse() throws Exception
-    {
-        List<CoreMap> sentences = NLP.getCoreMap("My name is Bob. I like to eat.");
 
-        System.out.println(sentences);
-        for (CoreMap s : sentences)
-        {
-            System.out.println(s);
-            NLP.getDependency(s);
-        }
-    }
 }
